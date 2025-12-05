@@ -99,6 +99,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 .header .header__inner .logo {
   width: 100%;
@@ -111,7 +113,11 @@ body {
   align-items: center;
   display: none;
   color: white;
-  gap: 40px;
+  column-gap: 40px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 12px;
+  max-width: 700px;
 }
 .header .header__inner .header__nav .header__list .header__item {
   display: flex;
@@ -134,7 +140,7 @@ body {
 }
 @media (min-width: 1280px) {
   .header .header__inner .header__nav .header__list {
-    gap: 60px;
+    column-gap: 60px;
   }
 }
 @media (min-width: 768px) {
@@ -528,6 +534,8 @@ body {
   .order .container .order__inner .order__form .order__form-top {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
     gap: 30px;
   }
 }
