@@ -59,6 +59,8 @@ button {
 }
 
 html{
+
+  scroll-behavior: smooth;
   font-size: 16px;
 }
 
@@ -317,6 +319,9 @@ body {
 .order{
   background: url("../images/order-bg.png");
   color: white;
+
+
+
   .container{
     padding: 60px 15px;
 
@@ -449,6 +454,7 @@ body {
         @media(min-width: 1280px) {
           flex-direction: row;
           justify-content: space-between;
+          overflow: unset;
         }
 
         @media(min-width: 991px) {

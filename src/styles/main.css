@@ -51,6 +51,7 @@ button:hover {
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 16px;
 }
 
@@ -404,6 +405,7 @@ body {
   .order .container .order__inner .order__steps {
     flex-direction: row;
     justify-content: space-between;
+    overflow: unset;
   }
 }
 @media (min-width: 991px) {

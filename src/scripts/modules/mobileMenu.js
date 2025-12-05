@@ -30,4 +30,12 @@ export default function MobileMenu() {
       document.body.classList.remove("no-scroll");
     }
   });
+
+  menu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("active");
+      document.body.classList.remove("no-scroll");
+      body.style.overflowY = "auto";
+    });
+  });
 }
