@@ -354,6 +354,7 @@ body {
         flex-direction: column;
         gap: 5px;
         margin-bottom: 40px;
+        overflow-x: hidden;
 
 
         .order__step{
@@ -762,8 +763,10 @@ body {
         .order__button{
           max-width: 370px;
           align-self: center;
-          &:hover{
-            transform: scale(1.1);
+          @media (min-width: 768px) {
+            &:hover{
+              transform: scale(1.1);
+            }
           }
         }
       }

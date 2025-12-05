@@ -319,6 +319,7 @@ body {
   flex-direction: column;
   gap: 5px;
   margin-bottom: 40px;
+  overflow-x: hidden;
 }
 .order .container .order__inner .order__steps .order__step {
   display: flex;
@@ -662,8 +663,10 @@ body {
   max-width: 370px;
   align-self: center;
 }
-.order .container .order__inner .order__form .order__button:hover {
-  transform: scale(1.1);
+@media (min-width: 768px) {
+  .order .container .order__inner .order__form .order__button:hover {
+    transform: scale(1.1);
+  }
 }
 @media (min-width: 768px) {
   .order .container {
