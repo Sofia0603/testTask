@@ -17,7 +17,7 @@ export default function MobileMenu() {
   btnClose.addEventListener("click", () => {
     menu.classList.remove("active");
     document.body.classList.remove("no-scroll");
-    body.style.overflow = "auto";
+    body.style.overflowY = "auto";
 
   });
 

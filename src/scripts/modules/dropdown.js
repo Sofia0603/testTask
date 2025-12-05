@@ -8,7 +8,8 @@ export default function DropdownModule() {
     const label = drop.querySelector('.order__dropdown__label');
     const icon = drop.querySelector('.order__dropdown__icon');
 
-    toggle.addEventListener('click', () => {
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
       list.classList.toggle('open');
       icon.classList.toggle('open');
       toggle.classList.toggle('open');
@@ -29,6 +30,15 @@ export default function DropdownModule() {
         toggle.classList.remove('open');
       });
     });
+
+    document.addEventListener('click', (e) => {
+      if (!drop.contains(e.target)) {
+        list.classList.remove('open');
+        toggle.classList.remove('open');
+        icon.classList.remove('open');
+      }
+    });
+
   });
 
 

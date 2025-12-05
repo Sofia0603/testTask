@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./src/styles/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
@@ -73,20 +73,20 @@
   <section class="hero">
     <div class="container">
       <div class="hero__inner">
-        <h1 class="hero__title">
+        <h1 data-aos="zoom-in-right" class="hero__title">
           <span>Lorem ipsum</span> dolor sit amet
           consectetur <span>adipiscing</span>
         </h1>
 
         <h2 class="hero__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus!</h2>
         <ul class="hero__list">
-          <li class="hero__item">
+          <li data-aos="zoom-out" data-aos-duration="300" class="hero__item">
             Totam rem aperiam eaque ipsa
           </li>
-          <li class="hero__item">
+          <li data-aos="zoom-out" data-aos-duration="400" class="hero__item">
             Sit voluptatem accusantium doloremque laudantium
           </li>
-          <li class="hero__item">
+          <li data-aos="zoom-out" data-aos-duration="500" class="hero__item">
             Sed ut perspiciatis, unde omnis iste natus error
           </li>
         </ul>
@@ -109,47 +109,43 @@
 
       <ul class="order__steps">
 
-        <li class="order__step">
+        <li data-aos="zoom-out-down" class="order__step">
           <span class="order__circle">
             <img src="src/images/icons/icon-search.svg" alt="search-icon">
           </span>
           <p class="order__name">Lorem ipsum dolor sit amet</p>
         </li>
 
-        <li class="order__dots"></li>
+        <li data-aos="zoom-out-down" class="order__dots"></li>
 
-
-        <li class="order__step">
+        <li data-aos="zoom-out-down" class="order__step">
           <span class="order__circle">
               <img src="src/images/icons/icon-percent.svg" alt="precent-icon">
           </span>
           <p class="order__name">Сonsecteturadipiscing elit</p>
         </li>
 
-        <li class="order__dots"></li>
+        <li data-aos="zoom-out-down" class="order__dots"></li>
 
-
-        <li class="order__step">
+        <li data-aos="zoom-out-down" class="order__step">
           <span class="order__circle">
               <img src="src/images/icons/icon-document.svg" alt="document-icon">
           </span>
           <p class="order__name">Sed do eiusmod tempor</p>
         </li>
 
-        <li class="order__dots" ></li>
+        <li data-aos="zoom-out-down" class="order__dots" ></li>
 
-
-        <li class="order__step">
+        <li data-aos="zoom-out-down" class="order__step">
           <span class="order__circle">
               <img src="src/images/icons/icon-mail.svg" alt="mail-icon">
           </span>
           <p class="order__name">Esse cillum dolore eu fugiat</p>
         </li>
 
-        <li class="order__dots"></li>
+        <li data-aos="zoom-out-down" class="order__dots"></li>
 
-
-        <li class="order__step">
+        <li data-aos="zoom-out-down" class="order__step">
           <span class="order__circle">
               <img src="src/images/icons/icon-money.svg" alt="money-icon">
           </span>
@@ -223,7 +219,7 @@
 
         </div>
 
-        <button type="button" class="btn-blue order__button">Отправить</button>
+        <button data-aos="fade-up"  data-aos-duration="1500" type="button" class="btn-blue order__button">Отправить</button>
 
       </form>
     </div>
@@ -239,30 +235,15 @@
       <div class="footer__line"></div>
       <div class="footer__block">
         <div class="footer__item footer__item-payment">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16.4086 13.4559C16.4687 13.8435 16.3418 14.0076 16.2135 14.0076C16.0853 14.0076 15.8996 13.85 15.6925 13.5373C15.4855 13.2245 15.4147 12.8769 15.5149 12.6986C15.5526 12.6368 15.6135 12.5915 15.6849 12.572C15.7563 12.5525 15.8327 12.5604 15.8983 12.5939C16.2389 12.718 16.3725 13.2233 16.4086 13.4559ZM14.5209 14.3061C14.9311 14.6408 15.0553 15.0389 14.8389 15.3193C14.773 15.3977 14.689 15.46 14.5936 15.5013C14.4982 15.5426 14.3942 15.5617 14.2898 15.557C14.061 15.5574 13.8393 15.4801 13.6633 15.3386C13.2919 15.0246 13.1824 14.5142 13.4255 14.2247C13.4792 14.1653 13.5462 14.1186 13.6215 14.0881C13.6968 14.0577 13.7782 14.0443 13.8597 14.049C14.1045 14.0569 14.3386 14.1479 14.5209 14.3061ZM13.8369 17.5367C15.599 17.5367 17.5107 18.1208 19.6281 19.9351C19.8392 20.1161 20.1211 19.8912 19.9367 19.6651C17.8567 17.1258 15.929 16.6412 14.0146 16.2329C11.6688 15.7315 10.4611 14.4535 9.61546 13.0514C9.44847 12.7723 9.37232 12.8214 9.35762 13.1806C9.34358 13.7131 9.38521 14.2456 9.48186 14.7701C9.38701 14.7701 9.29083 14.7701 9.19598 14.7701C7.99378 14.7701 6.81858 14.4252 5.81899 13.7792C4.8194 13.1331 4.04031 12.2148 3.58025 11.1404C3.12019 10.0661 2.99982 8.88385 3.23436 7.7433C3.46889 6.60275 4.04781 5.55509 4.89789 4.7328C5.74797 3.91051 6.83104 3.35053 8.01014 3.12366C9.18924 2.89679 10.4114 3.01322 11.5221 3.45824C12.6328 3.90326 13.5821 4.65688 14.25 5.62379C14.9179 6.5907 15.2744 7.72748 15.2744 8.89037C15.275 9.11877 15.2621 9.347 15.2357 9.57397C14.5953 9.49597 13.9482 9.48427 13.3053 9.53908C13.0741 9.55846 13.1075 9.6683 13.2812 9.69285C15.2851 10.043 16.6718 11.2435 16.987 13.4339C16.9882 13.445 16.9929 13.4555 17.0005 13.4638C17.0082 13.4721 17.0183 13.478 17.0296 13.4804C17.0408 13.4828 17.0526 13.4818 17.0632 13.4774C17.0738 13.473 17.0827 13.4654 17.0886 13.4559C18.131 11.7703 18.5674 9.79838 18.3297 7.84774C18.092 5.89709 17.1936 4.07738 15.7746 2.67245C14.3556 1.26752 12.4958 0.356356 10.4853 0.0810911C8.47478 -0.194174 6.42664 0.181935 4.6603 1.15075C2.89396 2.11957 1.50876 3.62662 0.720758 5.43683C-0.0672464 7.24704 -0.213743 9.25863 0.304117 11.1578C0.821978 13.057 1.97508 14.737 3.58355 15.9358C5.19203 17.1346 7.16544 17.7848 9.19598 17.7849C10.5386 17.7887 11.8758 17.5355 13.8369 17.5355V17.5367Z" fill="#3E9CDC" />
-          </svg>
+          <img src="src/images/icons/icon-qiwi.svg" alt="icon-qiwi">
           <span class="footer__item-name">Qiwi wallet</span>
         </div>
         <div class="footer__item footer__item-payment">
-          <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.000202012 8.69327C0.000202012 7.70922 0.0833991 7.0847 2.13847 5.56344C3.83986 4.30395 9.2934 0 9.2934 0V7.18467H13.4406V17.5252H1.29554C0.583122 17.5252 0 16.947 0 16.2404L0.000202012 8.69334V8.69327Z" fill="#3E9CDC" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29338 7.18457V11.3476L1.67249 16.4961L11.3077 13.3872V7.18457H9.29338Z" fill="black" fill-opacity="0.2" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.81077 6.96942C6.25646 6.4428 6.90733 6.25694 7.26471 6.5543C7.6221 6.85173 7.55066 7.51976 7.10497 8.04637C6.65961 8.57292 6.00848 8.75859 5.65109 8.46116C5.2937 8.1638 5.36534 7.4959 5.81077 6.96935V6.96942Z" fill="#231F20" />
-          </svg>
+          <img src="src/images/icons/icon-yandex.svg" alt="icon-yandex">
           <span class="footer__item-name">Yandex Money</span>
         </div>
         <div class="footer__item footer__item-payment">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_4_184)">
-              <path d="M8.84077 0C10.251 0 11.5928 0.323103 12.7969 0.901077C12.9857 0.986269 13.1758 1.08823 13.364 1.19028L12.5384 1.92159L11.3007 0.646297L9.16802 2.51651L7.91214 1.17307L3.99048 4.65889L6.50126 7.39646L5.52108 8.24641L7.99822 10.984L7.01795 11.8336L10.5613 15.7274L12.6585 13.823L14.4826 15.8639C14.1211 16.136 13.7255 16.4086 13.296 16.6462C11.9886 17.3773 10.4747 17.8016 8.85814 17.8016C3.88691 17.8016 -0.154454 13.8066 -0.154454 8.89314C-0.172009 4.01286 3.87007 0 8.84077 0ZM7.18931 8.34864L9.33937 6.44418L11.2662 8.56952L9.11567 10.4738L7.18931 8.34864ZM8.72053 12.0214L10.8531 10.1001L12.7969 12.2253L10.6467 14.1298L8.72053 12.0214ZM5.65942 4.72713L7.80886 2.82267L9.73522 4.948L7.58507 6.85238L5.65942 4.72713ZM9.59741 3.70661L11.1971 2.27842L12.6423 3.85978L11.0426 5.30484L9.59741 3.70661ZM12.4529 10.2528L14.0521 8.82456L15.4972 10.4224L13.8974 11.8516L12.4529 10.2528ZM13.8631 13.4668L15.4629 12.0382L16.9068 13.6195L15.3076 15.0644L13.8631 13.4668ZM14.5168 6.12107L15.5831 5.16879L16.5459 6.22339L15.4799 7.17531L14.5168 6.12107ZM13.1408 2.97548L14.2071 2.00651L15.1707 3.07753L14.1036 4.02972L13.1408 2.97548ZM15.8755 9.26693L16.9417 8.31474L17.922 9.36899L16.8389 10.3209L15.8755 9.26693ZM11.0768 6.90341L12.6766 5.47513L14.1211 7.05614L12.522 8.48469L11.0768 6.90341Z" fill="#3E9CDC" />
-            </g>
-            <defs>
-              <clipPath id="clip0_4_184">
-                <rect width="20" height="20" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
+          <img src="src/images/icons/icon-web.svg" alt="icon-web">
           <span class="footer__item-name">Web Money</span>
         </div>
       </div>
@@ -285,8 +266,8 @@
     </div>
   </div>
 </footer>
-
-<script type="module" src="src/scripts/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="module" src="main.js"></script>
 
 </body>
 </html>
