@@ -28,6 +28,7 @@ export default function DropdownModule() {
 
         list.classList.remove('open');
         toggle.classList.remove('open');
+        icon.classList.remove('open');
       });
     });
 

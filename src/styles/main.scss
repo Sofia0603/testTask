@@ -518,14 +518,16 @@ body {
               user-select: none;
             }
 
-            &__icon {
+            .order__dropdown__icon {
               transition: 0.2s;
 
-              &.open {
-                svg{
-                  transform: rotate(180deg);
+              svg {
+                transition: 0.2s;
+                transform: rotate(0deg);
+              }
 
-                }
+              &.open svg {
+                transform: rotate(180deg);
               }
             }
 
@@ -642,7 +644,6 @@ body {
                     position: relative;
                   }
 
-                  /* Прогресс (делаем фейком через активный цвет) */
                   &::-moz-range-track {
                     height: 4px;
                     background: #3c404c;

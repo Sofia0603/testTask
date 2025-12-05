@@ -463,10 +463,14 @@ body {
   font-size: 14px;
   user-select: none;
 }
-.order .container .order__inner .order__form .order__form-top .order__dropdown__icon {
+.order .container .order__inner .order__form .order__form-top .order__dropdown .order__dropdown__icon {
   transition: 0.2s;
 }
-.order .container .order__inner .order__form .order__form-top .order__dropdown__icon.open svg {
+.order .container .order__inner .order__form .order__form-top .order__dropdown .order__dropdown__icon svg {
+  transition: 0.2s;
+  transform: rotate(0deg);
+}
+.order .container .order__inner .order__form .order__form-top .order__dropdown .order__dropdown__icon.open svg {
   transform: rotate(180deg);
 }
 .order .container .order__inner .order__form .order__form-top .order__dropdown__list {
@@ -565,9 +569,6 @@ body {
   background: #42A9ED;
   border-radius: 4px;
   position: relative;
-}
-.order .container .order__inner .order__form .order__form-bottom .order__range-wrapper .order__range-bottom .order__range input[type=range] {
-  /* Прогресс (делаем фейком через активный цвет) */
 }
 .order .container .order__inner .order__form .order__form-bottom .order__range-wrapper .order__range-bottom .order__range input[type=range]::-moz-range-track {
   height: 4px;
